@@ -85,12 +85,12 @@ allure serve Reports_Temp
 
 
 ## File & Folder Structure
-`features` contains all the feature file (scenario/test cases are put inside each feature file )
-`features\steps` contains all step definitions for feature files
-`models` contains all .py file for actions when interacting with API
-`helpers` contains all .py file for helping methods\functions (Send PUT/POST/GET request action,...)
-`environment_constants.py` a .py file contains all constants variable that used through the framework
-`requirements.txt` a text file contains all required lib for the framework
++ `features` contains all the feature file (scenario/test cases are put inside each feature file )
++ `features\steps` contains all step definitions for feature files
++ `models` contains all .py file for actions when interacting with API
++ `helpers` contains all .py file for helping methods\functions (Send PUT/POST/GET request action,...)
++ `environment_constants.py` a .py file contains all constants variable that used through the framework
++ `requirements.txt` a text file contains all required lib for the framework
 
 ## Release History
 
