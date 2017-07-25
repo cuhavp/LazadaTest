@@ -86,7 +86,32 @@ def step_impl(context):
     users.verify_successful_response(context.response)
 
 
-@then("the response must not contains any user result")
+@then("the response must not contains any result")
 def step_impl(context):
     users.verify_successful_response(context.response)
-    users.verify_user_search_result_is_empty(context.response.text)
+    users.verify_response_result_is_empty(context.response.text)
+
+
+@given("there is not any user information or data")
+def step_impl(context):
+    context.user_info = ""
+
+
+@when('we PUT the user update information at endpoint "{req}" with invalid id {user_id}')
+def step_impl(context, req, user_id):
+    context.response = users.update_user(req, str(user_id), context.user_info)
+
+
+@then("the API must response with a 404 status code")
+def step_impl(context):
+    users.verify_page_not_found_response(context.response)
+
+
+@when('we DELETE the user at endpoint "{req}" with {user_id}')
+def step_impl(context, req, user_id):
+    context.response = users.delete_user_with_id(req, str(user_id))
+
+
+@when('we make a {req_type} request to invalid endpoint "{req}"')
+def step_impl(context, req_type, req):
+    context.response = users.make_simple_request_to_hostname(req_type,req)

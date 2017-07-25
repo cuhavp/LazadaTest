@@ -55,10 +55,46 @@ Feature: User API testing
   @negative
   Scenario Outline: Verify the API will not response any user when searching for invalid/non-existed username using API
     When we GET a user with <username> at endpoint "/users?username="
-    Then the response must not contains any user result
+    Then the response must not contains any result
     Examples:
       | username         |
       | blank            |
       | " "              |
       | number 999999999 |
 
+    #This test scenario will fail because the API server always created a new user with id = 11 even no input data
+  @negative
+  Scenario: Verify a POST request to create a new user will fail when there is no user data/information
+    Given there is not any user information or data
+    When we POST the user information at endpoint "/users"
+    Then the response must not contains any result
+
+  @negative
+  Scenario: Verify a PUT request to update an user will return 404 status code when using invalid user id
+    Given we want to update the user "Bret" with following information
+      | name        | email                  | website           |
+      | Bred Update | AnotherEmail@email.com | www.tryupdate.org |
+    When we PUT the user update information at endpoint "/users/" with invalid id 14
+    Then the API must response with a 404 status code
+
+  @negative
+  Scenario Outline: Verify a DELETE request will return 404 status code when deleting an invalid/non-exist user id
+    When we DELETE the user at endpoint "/users/" with <user_id>
+    Then the API must response with a 404 status code
+    Examples:
+      | user_id |
+      | 12      |
+      | 99      |
+      | 0       |
+
+
+  @negative @wip
+  Scenario Outline: Verify a request will return 404 status code when sending to an invalid hostname
+    When we make a <request_type> request to invalid endpoint "/users/invalid"
+    Then the API must response with a 404 status code
+    Examples:
+      | request_type |
+      | GET          |
+      | POST         |
+      | PUT          |
+      | DELETE       |
