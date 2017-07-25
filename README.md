@@ -81,7 +81,7 @@ allure serve Reports_Temp
 - Verify a `POST` request to create a new user is fail when there is no user data/information
 - Verify a `PUT` request to update an user will return 404 status code when using invalid user id
 - Verify a `GET` request will return 404 status code when sending to an invalid hostname
-- Verify a 'DElETE' request will return 404 status code when deleting an invalid/non-exist user id
+- Verify a `DELETE` request will return 404 status code when deleting an invalid/non-exist user id
 
 
 ## File & Folder Structure
