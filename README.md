@@ -48,7 +48,7 @@ behave --tags=@happy
 ## Reporting
 > Because the **Behave** framework itself only support xml output, so we will use an Allure Report plugin to generate HTML report
 
-### 1. Installing Allure CMD application
+### <a name="report"></a>1. Installing Allure CMD application
 - To install Allure, download and install [Scoop](http://scoop.sh/) and then execute in the Powershell:
 ```
 scoop install allure
@@ -57,7 +57,7 @@ scoop install allure
 ```
 C:\Users\{current user}\scoop\apps\allure\{version}\bin
 ```
-### <a name="report"></a>2. Generate HTML report from Test Result
+### 2. Generate HTML report from Test Result
 - In the Root folder of this repo, open CMD and execute the test with output:
 ```
 behave -f allure_behave.formatter:AllureFormatter -o Reports_Temp ./features 
