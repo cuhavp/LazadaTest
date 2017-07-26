@@ -68,6 +68,14 @@ allure serve Reports_Temp
 ```
 `Reports_Temp` is the folder contains temporary files for test result
 
+Example:
+Overview page:
+![alt text](https://github.com/vietphamqq/LazadaTest/tree/master/.github/Report1.png "Overview")
+
+Scenario/Package page:
+![alt text](https://github.com/vietphamqq/LazadaTest/tree/master/.github/Report2.png "Package")
+
+
 ## Testcases
 ##### 1/ Happy cases
 - Verify get list users by sending `GET` request to API server
