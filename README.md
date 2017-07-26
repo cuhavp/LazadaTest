@@ -72,7 +72,7 @@ allure serve Reports_Temp
 ![alt text](https://github.com/vietphamqq/LazadaTest/blob/master/.github/Report1.PNG "Overview")
 
 **Scenario/Package page:**
-![alt text](https://github.com/vietphamqq/LazadaTest/blob/master/.github/Report1.PNG "Package")
+![alt text](https://github.com/vietphamqq/LazadaTest/blob/master/.github/Report2.PNG "Package")
 
 
 ## Testcases
