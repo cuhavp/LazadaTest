@@ -3,6 +3,9 @@ from helpers.request_helpers import RequestHelpers
 import environment_constants as ec
 
 
+# User actions based on API, maybe a single API action or a combination of multiple API actions
+# Functions begin with "verify" is used for assertion the result
+
 def get_list_user(endpoint):
     response = RequestHelpers.send_get_request(endpoint)
     return response

@@ -1,5 +1,3 @@
-__author__ = 'phamq'
-
 BASE_API_URL = "https://jsonplaceholder.typicode.com"
 SUCCESS_STATUS_CODE = 200, 201, 203
 BAD_REQUEST_STATUS_CODE = 400
