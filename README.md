@@ -5,10 +5,10 @@
 
 ## Libraries
 
-- PyHamcrest (User for assertion)
+- PyHamcrest (Use for assertion/verify result)
 - Behave (BDD with gherkin language)
 - Requests (Interact with API)
-- Allure-behave
+- Allure-behave (Formatter for generating report)
 
 ## Pre-requisites
 - [Python 2.7.13](https://www.python.org/downloads/release/python-2713/)
