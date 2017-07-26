@@ -68,11 +68,10 @@ allure serve Reports_Temp
 ```
 `Reports_Temp` is the folder contains temporary files for test result
 
-Example:
-Overview page:
+**Overview page:**
 ![alt text](https://github.com/vietphamqq/LazadaTest/blob/master/.github/Report1.PNG "Overview")
 
-Scenario/Package page:
+**Scenario/Package page:**
 ![alt text](https://github.com/vietphamqq/LazadaTest/blob/master/.github/Report1.PNG "Package")
 
 
