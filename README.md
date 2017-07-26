@@ -70,10 +70,10 @@ allure serve Reports_Temp
 
 Example:
 Overview page:
-![alt text](https://github.com/vietphamqq/LazadaTest/tree/master/.github/Report1.png "Overview")
+![alt text](https://github.com/vietphamqq/LazadaTest/blob/master/.github/Report1.PNG "Overview")
 
 Scenario/Package page:
-![alt text](https://github.com/vietphamqq/LazadaTest/tree/master/.github/Report2.png "Package")
+![alt text](https://github.com/vietphamqq/LazadaTest/blob/master/.github/Report1.PNG "Package")
 
 
 ## Testcases
